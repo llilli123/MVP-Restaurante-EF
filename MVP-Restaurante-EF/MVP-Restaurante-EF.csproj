@@ -76,10 +76,13 @@
     <Compile Include="cliente.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IClienteView.cs" />
     <Compile Include="Interfaces\ILoginVista.cs" />
     <Compile Include="mesa.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Presenters\ClientePresenter.cs" />
+    <Compile Include="Repository\ClienteRepository.cs" />
     <Compile Include="reserva.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
@@ -182,6 +185,9 @@
     <EmbeddedResource Include="Views\MainPageViewcs.resx">
       <DependentUpon>MainPageViewcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\RegistroClientesView.resx">
+      <DependentUpon>RegistroClientesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ReservasViews.resx">
       <DependentUpon>ReservasViews.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,7 +222,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Presenters\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
