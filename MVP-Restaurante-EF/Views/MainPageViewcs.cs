@@ -16,5 +16,15 @@ namespace MVP_Restaurante_EF.Views
         {
             InitializeComponent();
         }
+
+        private void cardDisponibilidad_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void lblDispTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

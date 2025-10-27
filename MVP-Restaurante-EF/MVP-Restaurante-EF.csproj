@@ -78,10 +78,12 @@
     </Compile>
     <Compile Include="Interfaces\IClienteView.cs" />
     <Compile Include="Interfaces\ILoginVista.cs" />
+    <Compile Include="Interfaces\IReservaciones.cs" />
     <Compile Include="mesa.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Presenters\ClientePresenter.cs" />
+    <Compile Include="Presenters\ReservacionesPresenter.cs" />
     <Compile Include="Repository\ClienteRepository.cs" />
     <Compile Include="reserva.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
@@ -110,6 +112,12 @@
     </Compile>
     <Compile Include="Views\Agregar-Editar-MesaView.Designer.cs">
       <DependentUpon>Agregar-Editar-MesaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reservaciones.Designer.cs">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
@@ -179,6 +187,9 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="Views\Reservaciones.resx">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>

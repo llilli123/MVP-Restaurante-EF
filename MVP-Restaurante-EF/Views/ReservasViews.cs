@@ -16,5 +16,10 @@ namespace MVP_Restaurante_EF.Views
         {
             InitializeComponent();
         }
+
+        private void ReservasViews_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
