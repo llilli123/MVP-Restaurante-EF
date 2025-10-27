@@ -78,11 +78,15 @@
     </Compile>
     <Compile Include="Interfaces\IClienteView.cs" />
     <Compile Include="Interfaces\ILoginVista.cs" />
+    <Compile Include="Interfaces\IReservasView.cs" />
     <Compile Include="mesa.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelsVista.cs" />
     <Compile Include="Presenters\ClientePresenter.cs" />
+    <Compile Include="Presenters\ReservasPresenter.cs" />
     <Compile Include="Repository\ClienteRepository.cs" />
+    <Compile Include="Repository\ReservasRepository.cs" />
     <Compile Include="reserva.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
@@ -220,9 +224,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
