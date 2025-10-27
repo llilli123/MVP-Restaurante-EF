@@ -9,16 +9,17 @@ using System.Web.UI.WebControls;
 
 namespace MVP_Restaurante_EF.Services
 {
-    public class AuthService
+    public class AuthPresenter
     {
         private readonly ILoginVista _view;
         private readonly RestauranteReservasEntities _db;
+        private readonly INavegador _nav;
 
-        public AuthService(ILoginVista view, RestauranteReservasEntities db)
+        public AuthPresenter(ILoginVista view, RestauranteReservasEntities db, INavegador nav)
         {
             _view = view;
             _db = db;
-
+            _nav = nav;
             _view.LoginClicked += OnLoginClicked;
         }
 
@@ -35,6 +36,7 @@ namespace MVP_Restaurante_EF.Services
 
             // Comparación directa (texto plano)
             var ok = _db.usuarios.Any(u => u.Usuario1 == username && u.Password == password);
+            
 
             if (!ok)
             {
@@ -42,7 +44,10 @@ namespace MVP_Restaurante_EF.Services
                 return;
             }
 
-            _view.OpenMainAndCloseSelf();
+            _nav.ShowMainPage();
+            _view.CloseSelf();
+
+
         }
     }
 }

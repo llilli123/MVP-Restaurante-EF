@@ -26,14 +26,9 @@ namespace MVP_Restaurante_EF
         public event EventHandler LoginClicked;
 
         public void ShowError(string message)
-            => MessageBox.Show(this, message, "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        => MessageBox.Show(this, message, "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-        public void OpenMainAndCloseSelf()
-        {
-            MainPageViewcs main = new MainPageViewcs();
-            main.Show();
-            this.Hide();
-        }
+        public void CloseSelf() => this.Hide();
 
     }
 }

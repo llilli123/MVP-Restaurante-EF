@@ -78,6 +78,8 @@
     </Compile>
     <Compile Include="Interfaces\IClienteView.cs" />
     <Compile Include="Interfaces\ILoginVista.cs" />
+    <Compile Include="Interfaces\IMainPageFactory .cs" />
+    <Compile Include="Interfaces\INavegador.cs" />
     <Compile Include="Interfaces\IReservaciones.cs" />
     <Compile Include="mesa.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
@@ -103,7 +105,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RestauranteContext.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Presenters\AuthPresenter.cs" />
+    <Compile Include="Services\MainPageFactory.cs" />
+    <Compile Include="Services\WinformsNavegador.cs" />
     <Compile Include="usuario.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>

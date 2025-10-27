@@ -18,15 +18,17 @@ namespace MVP_Restaurante_EF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // 1) ÚNICA instancia de la vista
-            var view = new LoginView();
 
-            // 2) DbContext del EDMX
+            var View = new LoginView();
             var db = new RestauranteReservasEntities();
 
-            // 3) Suscripción del evento (AuthService se engancha a view.LoginClicked)
-            var auth = new AuthService(view, db);
-            Application.Run(view);
+            // Navegación (inyecta la factory al WinFormsNavegador)
+            var nav = new WinformsNavegador(new MainPageFactory());
+
+            // Tu “presenter” es AuthService (recibe vista, db y navegador)
+            var presenter = new AuthPresenter(View, db, nav);
+
+            Application.Run(View);
         }
     }
 }

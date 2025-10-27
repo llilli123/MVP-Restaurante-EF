@@ -13,6 +13,6 @@ namespace MVP_Restaurante_EF.Interfaces
         event EventHandler LoginClicked;
 
         void ShowError(string message);
-        void OpenMainAndCloseSelf();
+        void CloseSelf();
     }
 }
