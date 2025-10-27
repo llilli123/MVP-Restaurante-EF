@@ -26,7 +26,7 @@ namespace MVP_Restaurante_EF
 
             // 3) Suscripción del evento (AuthService se engancha a view.LoginClicked)
             var auth = new AuthService(view, db);
-            Application.Run(new RegistroClientesView());
+            Application.Run(view);
         }
     }
 }

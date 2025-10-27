@@ -133,6 +133,7 @@
     <Compile Include="Views\MainPageViewcs.Designer.cs">
       <DependentUpon>MainPageViewcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Mesa.cs" />
     <Compile Include="Views\MesasView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +164,7 @@
     <Compile Include="Views\VistasMesasView.Designer.cs">
       <DependentUpon>VistasMesasView.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\Icono De Lapiz PNG ,dibujos  Imágenes Prediseñadas De Lápiz, Iconos De Lápiz, Colegio PNG y Vector para Descargar Gratis _ Pngtree.jpeg" />
     <Content Include="RestauranteContext.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RestauranteContext.edmx</DependentUpon>
@@ -181,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -190,11 +193,17 @@
     <EmbeddedResource Include="Views\Reservaciones.resx">
       <DependentUpon>Reservaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Agregar-Editar-MesaView.resx">
+      <DependentUpon>Agregar-Editar-MesaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainPageViewcs.resx">
       <DependentUpon>MainPageViewcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MesasView.resx">
+      <DependentUpon>MesasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RegistroClientesView.resx">
       <DependentUpon>RegistroClientesView.cs</DependentUpon>
@@ -231,9 +240,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
