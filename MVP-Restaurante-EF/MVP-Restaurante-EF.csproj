@@ -81,12 +81,16 @@
     <Compile Include="Interfaces\IMainPageFactory .cs" />
     <Compile Include="Interfaces\INavegador.cs" />
     <Compile Include="Interfaces\IReservaciones.cs" />
+    <Compile Include="Interfaces\IReservasView.cs" />
     <Compile Include="mesa.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelsVista.cs" />
     <Compile Include="Presenters\ClientePresenter.cs" />
     <Compile Include="Presenters\ReservacionesPresenter.cs" />
+    <Compile Include="Presenters\ReservasPresenter.cs" />
     <Compile Include="Repository\ClienteRepository.cs" />
+    <Compile Include="Repository\ReservasRepository.cs" />
     <Compile Include="reserva.cs">
       <DependentUpon>RestauranteContext.tt</DependentUpon>
     </Compile>
